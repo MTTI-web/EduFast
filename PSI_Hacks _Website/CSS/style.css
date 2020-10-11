@@ -164,6 +164,7 @@
                             text-decoration: none;
                             transition: all 0.3s;
                             cursor: pointer;
+                            text-align: center;
                         }
 
                         .nav-item:hover {
@@ -534,6 +535,16 @@
         transform: rotate(90deg);
         height: 50px;
         width: 60px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nav-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .nav-content {
+        height: 230px;
     }
 }
 
